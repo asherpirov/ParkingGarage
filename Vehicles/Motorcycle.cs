@@ -5,7 +5,13 @@ using System.Text;
 
 namespace ParkingGarage.Vehicles
 {
-    class Motorcycle : Vehicle , ISupportedVehicle
+    class Motorcycle : Vehicle
     {
+        public string VehicleId;
+        public Motorcycle(string vehicleId) : base(vehicleId)
+        {
+            VihecleId = vehicleId;
+        }
+        public override string GetVihecleType() => $"Motorcycle";
     }
 }

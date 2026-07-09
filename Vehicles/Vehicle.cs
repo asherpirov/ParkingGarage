@@ -8,10 +8,12 @@ namespace ParkingGarage.Vehicles;
     abstract class Vehicle
     {
     public string VihecleId;
+    public DateTime EntryTime;
+    public DateTime? ExitTime;
 
-    protected Vehicle(string vihecleId)
+    protected Vehicle(string vehicleId)
     {
-        VihecleId = vihecleId;
+        VihecleId = vehicleId;
     }
 
     public abstract string GetVihecleType();

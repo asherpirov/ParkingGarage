@@ -4,7 +4,13 @@ using System.Text;
 
 namespace ParkingGarage.ParkingGate
 {
-    internal class VehicleExitException
+    class VehicleExitException : Exception
     {
+        public string Message;
+        public VehicleExitException(string message) : base(message)
+        {
+            Message = message;
+        }
+
     }
 }

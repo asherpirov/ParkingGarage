@@ -5,9 +5,10 @@ using System.Text;
 
 namespace ParkingGarage.Interfaces
 {
-    interface IPreorderable
+    interface IReserable
     {
-        public bool isOrder();
+        public void MakeReservation();
+        public void CancelReservation();
     }
 
 }

@@ -5,8 +5,13 @@ using System.Text;
 
 namespace ParkingGarage.PaymentsTerminals
 {
-    class CashTerminal : IPayment
+    class CashTerminal : IPaymentTermial
     {
-
+        public string GetTeminalType() => $"Cash";
+        public bool SucssesPaymant(double amount)
+        {
+            Console.WriteLine($"Parking payment was made in the {amount} shekels in {GetTeminalType()}.");
+            return true;
+        }
     }
 }

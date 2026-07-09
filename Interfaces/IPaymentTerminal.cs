@@ -5,8 +5,9 @@ using System.Text;
 
 namespace ParkingGarage.Interfaces
 {
-    interface IPayment
+    interface IPaymentTermial
     {
-        public void PaymentResult(Vehicle vehicle, bool success);
+        public string GetTeminalType();
+
     }
 }
